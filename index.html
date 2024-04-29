@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-options" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-options">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-plus nav-options"></i>
+                        <i class="fa-solid fa-arrow-right  nav-options"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <div class="badge"><button>Create playlist</button></div>   
+                </div>
+                <div class="lib-box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you updated on new episodes</p>
+                    <div class="badge"><button>Browse podcasts</button></div>   
+            </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-arrows badge">
+                    <button><img src="./assets/backward_icon.png"></button>
+                    <button class="hide"><img src="./assets/forward_icon.png"></button>
+                </div>
+
+                <div class="sticky-nav-buttons badge">
+                    <button class="hide">Explore Premium</button>
+                    <button id="dark"><i class="fa-sharp fa-regular fa-circle-down"></i> Install App</button>
+                    <button id="dark"><i class="fa-regular fa-user"></i></button>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-p1">Top-50 - Global</p>
+                    <p class="card-p2">Your daily updates of the most played tracks right...</p>
+                </div>
+            </div>
+
+            <h2>Spotify original & exclusive Albums</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img">
+                    <p class="card-p1">Mahiye Jinna Sohna</p>
+                    <p class="card-p2">2023 . Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img">
+                    <p class="card-p1">Mahiye Jinna Sohna</p>
+                    <p class="card-p2">2023 . Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img">
+                    <p class="card-p1">Mahiye Jinna Sohna</p>
+                    <p class="card-p2">2023 . Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-p1">Mahiye Jinna Sohna</p>
+                    <p class="card-p2">2023 . Darshan Raval</p>
+                </div>
+                
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img">
+                    <p class="card-p1">Mahiye Jinna Sohna</p>
+                    <p class="card-p2">2023 . Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img">
+                    <p class="card-p1">Mahiye Jinna Sohna</p>
+                    <p class="card-p2">2023 . Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-p1">Mahiye Jinna Sohna</p>
+                    <p class="card-p2">2023 . Darshan Raval</p>
+                </div>
+                
+            </div>
+
+            <div class="footer">
+                <div class="line">      
+                </div>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <div class="albums">
+                <img src="./assets/album_picture.jpeg" alt="">
+                <div class="album-text">
+                    <div class="album-bold">Daylight</div>
+                    <div>David Kushner</div>
+                </div>
+                <div class="album-icon">
+                    <img src="./assets/album_icon1.png" alt="">
+                    <img src="./assets/album_icon2.png">
+                </div>
+            </div>
+            <div class="player-controls">
+                <div class="player-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play" style="font-size: 1.8rem;"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="playbar">
+                    <div>
+                        <h5>1:55</h5>
+                    </div>
+                    <div class="xxx">
+                    <input type="range" min="0" max="100" step="1" value="60" class="slider">
+                    </div>
+                    <div>
+                        <h5>3:33</h5>
+                    </div>   
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./assets/controls_icon1.png" id="small">
+                <img src="./assets/controld_icon2.png" id="small">
+                <img src="./assets/controls_icon3.png" alt="">
+                <img src="./assets/controls_icon4.png" id="dj">
+                <img src="./assets/controls_icon5.png" id="small">
+                <input type="range" class="controller" id="controller">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
